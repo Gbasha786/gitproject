@@ -4,21 +4,26 @@
   <artifactId>MavenProject</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   
+  <properties>
+	  <selenium.version>2.53.1</selenium.version>
+	  <testng.version>6.9.10</testng.version>
+	  
+  </properties>
+  
   <dependencies>
-
 	<!-- Selenium -->
 	<dependency>
 	  <groupId>org.seleniumhq.selenium</groupId>
 	  <artifactId>selenium-java</artifactId>
-	  <version>2.53.1</version>
+	  <version>${selenium.version}</version>
 	</dependency>
 	<!-- TestNG -->
 	<dependency>
 	  <groupId>org.testng</groupId>
 	  <artifactId>testng</artifactId>
-	  <version>6.8</version>
-	  <scope>compile</scope>
-	</dependency>	
+	  <version>${testng.version}</version>
+	  <scope>test</scope>
+	</dependency>
 
   </dependencies>
   
@@ -27,7 +32,7 @@
   		<plugin>
   			<groupId>org.apache.maven.plugins</groupId>
            	<artifactId>maven-compiler-plugin</artifactId>
-           	<version>3.6.1</version>
+           	<version>3.6.2</version>
            	<configuration>
            		<source>1.8</source>
            		<target>1.8</target>
@@ -47,5 +52,6 @@
   		</plugin>
   	</plugins>  
   </build>
+  
   
 </project>
