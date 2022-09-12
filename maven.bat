@@ -1,4 +1,4 @@
-set projectLocation=D:\DeleteNow\MavenProject
+set projectLocation=/var/lib/jenkins/workspace/girprojec
 
 cd %projectLocation%
 
